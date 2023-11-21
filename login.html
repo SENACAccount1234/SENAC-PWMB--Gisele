@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <div style="padding-right: 100px;" class="logo" >
+         <h1 class="logo-text">Fit Hub</h1>
+      </div>
+      <div class="menu">
+       <ul>
+          <a href="../index.html">Início</a>
+          <a href="especialidade.html">Especialidades</a>
+          <a id="login" href="login.html">Login/Cadastro</a>
+         </ul>
+      </div>
+   </nav>
+
+
+
+    <header>
+        <h1>Saúde e Bem Estar</h1>
+    </header>
+     
+
+    <div class="container">
+      <div id="loginCard" class="card">
+          <h2>Login</h2>
+          <form id="loginForm">
+              <label for="loginUsername">Usuário:</label>
+              <input type="text" id="loginUsername" required>
+
+              <label for="loginPassword">Senha:</label>
+              <input type="password" id="loginPassword" required>
+
+              <button type="button" onclick="performLogin()">Entrar</button>
+              <p>Não tem uma conta ainda? <a href="#" onclick="showRegisterForm()">Clique aqui!</a></p>
+          </form>
+      </div>
+
+      <div id="registerCard" class="card hidden">
+          <h2>Cadastro</h2>
+          <form id="registerForm">
+              <label for="registerName">Nome:</label>
+              <input type="text" id="registerName" required>
+            <p></p>
+              <label for="registerEmail">Email:</label>
+              <input type="email" id="registerEmail" required>
+              <p></p>
+              <label for="registerUsername">Usuário:</label>
+              <input type="text" id="registerUsername" required>
+              <p></p>
+              <label for="registerPassword">Senha:</label>
+              <input type="password" id="registerPassword" required>
+              <p></p>
+              <button type="button" onclick="performRegistration()">Cadastrar</button>
+              <p>Já tem uma conta? <a href="#" onclick="showLoginForm()">Faça login!</a></p>
+          </form>
+      </div>
+  </div>
+
+  <footer>
+   <p>2023 © Fit Hub. Todos os direitos reservados.</p>
+</footer>
+
+<div class="whats">
+   <a target="_blank" href="https://api.whatsapp.com/send?phone=5511946319351&text=Ol%C3%A1,%20gostaria%20de%20esclarecer%20minhas%20d%C3%BAvidas%20sobre%20os%20planos%20da%20plataforma.">
+       <img width="50" src="../css/img/whats.png">
+   </a>
+</div>
+
+  <script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
